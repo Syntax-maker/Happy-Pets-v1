@@ -39,8 +39,8 @@
      <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
         <div class = "container">
             <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
-                <img src = "paw.png" alt= "site icon">
-                <span class = "text-uppercase fw-lighter ms-2">Happy Pets</span>
+                <img src = "img/paw.png" alt= "site icon">
+                <h5 class = "text-uppercase fw-lighter ms-2">Happy Pets</h5>
             </a>
 
             <div class = "order-lg-2 nav-btns">
@@ -48,13 +48,7 @@
                     <i class = "fa fa-shopping-cart"></i>
                     <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">0</span>
                 </button>
-                <button type = "button" class = "btn position-relative">
-                    <i class = "fa fa-heart"></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">0</span>
-                </button>
-                <button type = "button" class = "btn position-relative">
-                    <i class = "fa fa-search"></i>
-                </button>
+                
             </div>
 
             <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "">
@@ -79,9 +73,7 @@
                     <li class = "nav-item px-2 py-2">
                         <a class = "active nav-link text-uppercase text-dark" href = "contact.html">contact</a>
                     </li>
-                    <li class = "nav-item px-2 py-2 border-0">
-                        <a class = "nav-link text-uppercase text-dark" href = "#popular">book now!</a>
-                    </li>
+                   
                     
                 </ul>
             </div>
@@ -104,7 +96,7 @@
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="carousel-1.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/dogs/about2.jpg" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -146,21 +138,21 @@
         <h5>Check what they say about us...</h5>
         <div class="cards">
             <div class="card1">
-                <img src="testimonial-1.jpg">
+                <img src="img/person/testimonial-1.jpg">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti sit eum debitis qui iure quasi, </p>
                 <h2>Marites Dimagiba</h2>
                 <h4>Pet Owner</h4>
                 <i class="fa fa-qoute-left"></i>
             </div>
             <div class="card1">
-                <img src="testimonial-2.jpg">
+                <img src="img/person/testimonial-2.jpg">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti sit eum debitis qui iure quasi, </p>
                 <h2>Jhon Dosol</h2>
                 <h4>Pet Owner</h4>
                 <i class="fa fa-qoute-left"></i>
             </div>
             <div class="card1">
-                <img src="user.jpg">
+                <img src="img/person/user.jpg">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti sit eum debitis qui iure quasi,</p>
                 <h2>Crispin Basillo</h2>
                 <h4>Pet Owner</h4>
@@ -182,27 +174,27 @@
 
         </div>
         <div class="fe-box">
-            <img src="f2.png" alt="">
+            <img src="img/f2.png" alt="">
             <h6>Online Order</h6>
 
         </div>
-        <div class="fe-box">
+        <div class="img/fe-box">
             <img src="f3.png" alt="">
             <h6>Save Money</h6>
 
         </div>
         <div class="fe-box">
-            <img src="f4.png" alt="">
+            <img src="img/f4.png" alt="">
             <h6>Promotion</h6>
 
         </div>
         <div class="fe-box">
-            <img src="f5.png" alt="">
+            <img src="img/f5.png" alt="">
             <h6>Happy Sell</h6>
 
         </div>
         <div class="fe-box">
-            <img src="f6.png" alt="">
+            <img src="img/f6.png" alt="">
             <h6>Support</h6>
 
         </div>
@@ -220,9 +212,38 @@
                 </div>
 
                 <p class = "text-center text-muted">Get awesome exclusives and more deals when you subscribe!</p>
-                <div class = "input-group mb-3 mt-3">
-                    <input type = "text" class = "form-control" placeholder="Enter Your Email ...">
-                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                <div>
+                    <form action="https://formsubmit.co/sincodenito901@gmail.com" class = "input-group mb-3 mt-3" method="POST">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control " name="Namee" placeholder=" Your Name ..." required>
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" name="email" placeholder=" Your Email ..." required>
+                           
+                        </div>
+                        <div class="col">
+                             <button type="submit" class="btn btn-primary py-1"
+                                onclick="alert ('Thank you. You successfully become subscriber.')">Subscribe</button>
+                        </div>
+                    </div>
+                    
+                    <input type="hidden" name="_next" value="https://syntax-maker.github.io/Happy-Pets/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Subject: Thank you for subscribing to our Happy Pet Shop!
+                    Dear Namee,
+                    
+                    Thank you for subscribing to our Pet Shop! We are thrilled to have you join our community of pet lovers and enthusiasts.
+                    
+                    As a subscriber, you will receive regular updates on our latest products, promotions, and events. You'll also have access to exclusive offers and discounts, so be sure to keep an eye on your inbox.
+                    
+                    If you have any questions or need assistance, our customer service team is here to help. Simply reply to this email and we'll get back to you as soon as possible.
+                    
+                    Thank you again for subscribing to our Pet Shop. We can't wait to share our passion for pets with you!
+                    
+                    Best regards,
+                    The Happy Pet Shop Team">
+                </form>
                 </div>
             </div>
         </div>
