@@ -157,6 +157,26 @@ body{
 
 
 /*services*/
+#page-header.services-header{
+    background-image: url('carousel-1.jpg') ;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-top:60px;;
+}
+.services-header h2{
+    font-weight: 600;
+   
+}
+.services-header p{
+    font-weight: 500;
+}
+
 .card {
     z-index: 1;
     overflow: hidden;
